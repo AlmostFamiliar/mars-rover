@@ -8,24 +8,7 @@ import java.util.Set;
 
 public class Start {
 
-	static Random r = new Random();
-	static LinkedHashMap<int[], String> mars;
 
-	public static void init() {
-		mars = new LinkedHashMap<>();
-		int x = 80;
-		int y = 20;
-		int rx = x / 2;
-		int ry = y / 2;
-		for (int i = 0; i < x; i++) {
-			for (int j = 0; j < y; j++) {
-				int[] p = new int[] { i, j };
-				if (r.nextDouble() < 0.25 && !(rx == i && ry == j))
-					mars.put(p, "#");
-			}
-		}
-		mars.put(new int[] { rx, ry }, "n");
-	}
 
 	public static int[] maximum(Set<int[]> set) {
 		int[] x = new int[2];
@@ -84,13 +67,6 @@ public class Start {
 	}
 
 	public static void main(String[] args) {
-
-		if (args.length > 1) {
-			long seed = Long.parseLong(args[1]);
-			r.setSeed(seed);
-			// System.out.println("Seed: " + seed);
-		}
-		init();
 		String pg = args[0];
 		out();
 		for (int i = 0; i < pg.length(); i++) {
