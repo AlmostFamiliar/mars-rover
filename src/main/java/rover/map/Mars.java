@@ -17,22 +17,8 @@ public class Mars {
     private static final char EMPTY = ' ';
 
     private char[][] marsMap;
-    private static Mars mars = null;
 
-    /**
-     * Singleton instance of the mars, because the mars never changes after initalized once.
-     *
-     * @return the mars.
-     */
-    public static Mars getInstance() {
-        if (mars == null) {
-            mars = new Mars();
-        }
-        return mars;
-    }
-
-    private Mars() {
-        Random random = new Random();
+    public Mars(Random random) {
         marsMap = new char[MAX_X_SIZE][MAX_Y_SIZE];
 
         for (int y = 0; y < MAX_Y_SIZE; y++) {

@@ -1,7 +1,5 @@
 package rover.rover;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.UnaryOperator;
 
 public enum Command {

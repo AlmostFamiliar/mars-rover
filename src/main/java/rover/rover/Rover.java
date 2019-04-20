@@ -20,10 +20,10 @@ public abstract class Rover {
 
     public abstract char getRoverOrientation();
 
-    public Rover move(Command command) {
+    public Rover move(Mars mars, Command command) {
         final Rover newRover = command.apply(this);
 
-        return Mars.getInstance().moveRover(getPosition(), newRover) ? newRover : this;
+        return mars.moveRover(getPosition(), newRover) ? newRover : this;
     }
 
     public Position getPosition() {
