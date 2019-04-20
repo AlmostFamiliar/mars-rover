@@ -1,58 +1,82 @@
 package rover.map;
 
 
+import rover.rover.NorthRover;
+import rover.rover.Rover;
+
 import java.util.Random;
 
 /**
  * Represents the Map / Mars that the rover moves on.
  */
 public class Mars {
-    public static final char ROCK = '#';
-    private static final int MAX_Y_SIZE = 80;
-    private static final int MAX_X_SIZE = 80;
+    public static final int MAX_Y_SIZE = 15;
+    public static final int MAX_X_SIZE = 80;
+
+    private static final char ROCK = '#';
+    private static final char EMPTY = ' ';
 
     private char[][] marsMap;
-    private Mars mars = null;
+    private static Mars mars = null;
 
     /**
-     * Singleton instance of the mars, because the Mars never changes after initalized once.
+     * Singleton instance of the mars, because the mars never changes after initalized once.
      *
      * @return the mars.
      */
-    public Mars getInstance() {
+    public static Mars getInstance() {
         if (mars == null) {
-            mars = new Mars(MAX_X_SIZE, MAX_Y_SIZE);
+            mars = new Mars();
         }
         return mars;
     }
 
-    public Mars(int maxXSize, int maxYSize) {
+    private Mars() {
         Random random = new Random();
         random.setSeed(System.currentTimeMillis());
-        marsMap = new char[maxXSize][maxYSize];
+        marsMap = new char[MAX_X_SIZE][MAX_Y_SIZE];
 
-        for (int x = 0; x < maxXSize; x++) {
-            for (int y = 0; y < maxYSize; y++) {
-                final boolean isStartingPos = x == maxXSize / 2 || y == maxYSize / 2;
-
-                if (random.nextDouble() < 0.25 && !isStartingPos) {
-                    marsMap[x][y] = ROCK;
-                }
+        for (int y = 0; y < MAX_Y_SIZE; y++) {
+            for (int x = 0; x < MAX_X_SIZE; x++) {
+                marsMap[x][y] = random.nextDouble() < 0.25 ? ROCK : EMPTY;
             }
         }
+
+        marsMap[MAX_X_SIZE / 2][MAX_Y_SIZE / 2] = NorthRover.ROVER_ORIENTATION; //Garbage code TODO
     }
 
-    public char getObjectAtPosition(int x, int y) {
-        return marsMap[x][y];
-    }
+    public boolean moveRover(Position position, Rover newRover) {
+        final Position newRoverPosition = newRover.getPosition();
 
-    public void updateObjectAtPosition(char newObject, int x, int y) {
-        final String errorMessage = "Invalid arg for %s Coordinate. Expected to be positive and smaller than %d"
-        if (x >= MAX_X_SIZE) {
-            throw new IllegalArgumentException(String.format(errorMessage, "x", MAX_X_SIZE));
-        } if (y >= MAX_Y_SIZE) {
-            throw new IllegalArgumentException(String.format(errorMessage, "y", MAX_Y_SIZE));
+        boolean isMoved = false;
+        if (getField(newRoverPosition) != Mars.ROCK) {
+            marsMap[position.getxCoordinate()][position.getyCoordinate()] = EMPTY;
+            marsMap[newRoverPosition.getxCoordinate()][newRoverPosition.getyCoordinate()] = newRover.getRoverOrientation();
+            isMoved = true;
         }
-        marsMap[x][y] = newObject;
+        return isMoved;
+
     }
+
+    public void print() {
+        StringBuilder output = new StringBuilder();
+        for (int y = 0; y < MAX_Y_SIZE; y++) {
+            for (int x = 0; x < MAX_X_SIZE; x++) {
+                output.append(marsMap[x][y]);
+            }
+            output.append("\n");
+        }
+
+        for(int x = 0; x < MAX_X_SIZE; x++){
+            output.append("=");
+        }
+        output.append("\n");
+
+        System.out.println(output.toString());
+    }
+
+    private char getField(Position position) {
+        return marsMap[position.getxCoordinate()][position.getyCoordinate()];
+    }
+
 }
