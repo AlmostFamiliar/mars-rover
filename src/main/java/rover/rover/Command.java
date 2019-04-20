@@ -1,9 +1,11 @@
 package rover.rover;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.UnaryOperator;
 
 public enum Command {
-    FOWARD('f', Rover::moveForward),
+    FORWARD('f', Rover::moveForward),
     BACK('b', Rover::moveBackward),
     LEFT('l', Rover::turnLeft),
     RIGHT('r', Rover::turnRight);
@@ -22,8 +24,8 @@ public enum Command {
                 return command;
             }
         }
-        //TODO
-        throw new IllegalArgumentException(String.format("Unkown argument %s. Expected: whateverkeinezeit", programArg));
+
+        throw new IllegalArgumentException(String.format("Unkown argument %s!", programArg));
     }
 
     public Rover apply(Rover rover){

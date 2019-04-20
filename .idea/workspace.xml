@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6497b832-f4cb-4219-a8eb-4bc57c4240c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/map/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/EastRover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/NorthRover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/Rover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/SouthRover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rover/rover/WestRover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rover/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rover/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rover/map/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rover/map/Mars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rover/rover/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rover/rover/Command.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rover/Start.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="231">
+              <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,13 +63,13 @@
         <option value="$PROJECT_DIR$/src/main/java/rover/rover/UpRover.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/command/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/rover/Rover.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rover/rover/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rover/rover/SouthRover.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/rover/EastRover.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/rover/WestRover.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rover/rover/NorthRover.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/map/Mars.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/Start.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rover/rover/SouthRover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rover/rover/NorthRover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rover/rover/Command.java" />
       </list>
     </option>
   </component>
@@ -94,7 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +149,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +202,7 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rover.Start" />
       <module name="projekt-1-marsrover-Deggy15-master" />
-      <option name="PROGRAM_PARAMETERS" value="llrrfffff" />
+      <option name="PROGRAM_PARAMETERS" value="llrrfffffdw" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="rover.*" />
@@ -248,7 +239,7 @@
       <workItem from="1555704748750" duration="2122000" />
       <workItem from="1555746086463" duration="951000" />
       <workItem from="1555747056465" duration="16938000" />
-      <workItem from="1555766800699" duration="523000" />
+      <workItem from="1555766800699" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="removed gradle stuff">
       <created>1555747263667</created>
@@ -264,28 +255,44 @@
       <option name="project" value="LOCAL" />
       <updated>1555750687817</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed if chains through polymorphism">
+      <created>1555767567958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555767567959</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21985000" />
+    <option name="totallyTimeSpent" value="22549000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3449001" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.404837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -334,7 +341,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed gradle stuff" />
     <MESSAGE value="moved mars map into its own class" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved mars map into its own class" />
+    <MESSAGE value="removed if chains through polymorphism" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed if chains through polymorphism" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle" />
@@ -361,13 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/original/Original.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -375,13 +376,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/SouthRover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -396,27 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/NorthRover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rover/map/Mars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,8 +412,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rover/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="399">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/SouthRover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="110" lean-forward="true" selection-start-line="19" selection-start-column="110" selection-end-line="19" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/NorthRover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rover/map/Mars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="44" column="95" selection-start-line="44" selection-start-column="95" selection-end-line="44" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rover/rover/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
