@@ -33,7 +33,6 @@ public class Mars {
 
     private Mars() {
         Random random = new Random();
-        random.setSeed(System.currentTimeMillis());
         marsMap = new char[MAX_X_SIZE][MAX_Y_SIZE];
 
         for (int y = 0; y < MAX_Y_SIZE; y++) {
@@ -72,7 +71,7 @@ public class Mars {
         }
         output.append("\n");
 
-        System.out.println(output.toString());
+        System.out.print(output.toString());
     }
 
     private char getField(Position position) {

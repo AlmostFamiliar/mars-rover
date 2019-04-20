@@ -12,9 +12,9 @@ public class Start {
         final String commandSequence = args[0];
         final Mars mars = Mars.getInstance();
         final Position middleOfMars = new Position(Mars.MAX_X_SIZE / 2, Mars.MAX_Y_SIZE / 2);
-        Rover rover = new NorthRover(middleOfMars);
 
         mars.print();
+        Rover rover = new NorthRover(middleOfMars);
         for (int i = 0; i < commandSequence.length(); i++) {
             final Command command = Command.convertCharToCommand(commandSequence.charAt(i));
             rover = rover.move(command);
