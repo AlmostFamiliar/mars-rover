@@ -3,6 +3,9 @@ package rover.rover;
 import rover.map.Mars;
 import rover.map.Position;
 
+/**
+ * A rover, who is able to move around on the mars.
+ */
 public abstract class Rover {
     private final Position position;
 
