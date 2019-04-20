@@ -1,7 +1,7 @@
 package rover.map;
 
 
-import rover.rover.NorthRover;
+import rover.rover.states.NorthRover;
 import rover.rover.Rover;
 
 import java.util.Random;

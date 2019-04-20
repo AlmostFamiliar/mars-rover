@@ -1,6 +1,7 @@
-package rover.rover;
+package rover.rover.states;
 
 import rover.map.Position;
+import rover.rover.Rover;
 
 public class NorthRover extends Rover {
     public static final char ROVER_ORIENTATION = '^';

@@ -10,13 +10,13 @@ public abstract class Rover {
         this.position = position;
     }
 
-    abstract Rover moveForward();
+    protected abstract Rover moveForward();
 
-    abstract Rover moveBackward();
+    protected abstract Rover moveBackward();
 
-    abstract Rover turnLeft();
+    protected abstract Rover turnLeft();
 
-    abstract Rover turnRight();
+    protected abstract Rover turnRight();
 
     public abstract char getRoverOrientation();
 

@@ -3,7 +3,7 @@ package rover;
 import rover.map.Mars;
 import rover.map.Position;
 import rover.rover.Command;
-import rover.rover.NorthRover;
+import rover.rover.states.NorthRover;
 import rover.rover.Rover;
 
 import java.util.Random;
