@@ -1,7 +1,6 @@
 # Professionelle Softwareentwicklung: Projekt 1
 
-## Projekt
-IMPORTANT: Die Abgabefrist ist der 19.04.2019 um 20:00 Uhr (Ortszeit Düsseldorf)
+Eine Aufgabe um sauberen Code zu entwickeln, die ich online gefunden habe. Zum Spaß habe ich mich an einer eigenen Lösung probiert. 
 
 ### Aufgabe 1
 
